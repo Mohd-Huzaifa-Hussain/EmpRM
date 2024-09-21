@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import in.ineuron.nitin.model.Employee;
 import in.ineuron.nitin.service.IEmployeeService;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://employee-app-tau.vercel.app")
 @RestController
 @RequestMapping("/api/v1")
 public class EmployeeController {
