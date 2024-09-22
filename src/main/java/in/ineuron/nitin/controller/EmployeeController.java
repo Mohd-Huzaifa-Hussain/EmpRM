@@ -19,7 +19,6 @@ import in.ineuron.nitin.model.Employee;
 import in.ineuron.nitin.service.IEmployeeService;
 
 @RestController
-@RequestMapping("/api/v1")
 public class EmployeeController {
 
 	@Autowired
