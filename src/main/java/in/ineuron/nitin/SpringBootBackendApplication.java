@@ -18,7 +18,11 @@ public class SpringBootBackendApplication {
       return new WebMvcConfigurer() {
          @Override
          public void addCorsMappings(CorsRegistry registry) {
-            registry.addMapping("/employees").allowedOrigins("https://employeeapp-production.up.railway.app");
+            registry.addMapping("/**")
+                .allowedOrigins("https://employeeapp-production.up.railway.app")
+                .allowedMethods("GET", "POST", "PUT", "DELETE")
+                .allowedHeaders("*")
+                .allowCredentials(true);
          }
       };
    }
